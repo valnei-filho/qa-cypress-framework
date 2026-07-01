@@ -1,10 +1,12 @@
 # QA Cypress Framework
 
-Automation testing framework developed with **Cypress**, following industry best practices such as **Page Object Model (POM)**, reusable methods and organized project structure.
+A UI test automation framework built with **Cypress**, following industry best practices such as **Page Object Model (POM)**, reusable methods, custom commands and a clean project architecture.
+
+The project demonstrates how to build a maintainable Cypress framework using a real login flow, with focus on code organization and reusability.
 
 ---
 
-## 🚀 Technologies
+# 🚀 Technologies
 
 - Cypress
 - JavaScript (ES6+)
@@ -14,9 +16,9 @@ Automation testing framework developed with **Cypress**, following industry best
 
 ---
 
-## 📁 Project Structure
+# 📂 Project Structure
 
-```
+```text
 cypress
 │
 ├── e2e
@@ -24,32 +26,39 @@ cypress
 │
 ├── fixtures
 │   └── data
+│       └── login.json
 │
 ├── pages
-│   └── LoginPage.js
+│   ├── LoginPage.js
+│   └── HomePage.js
 │
-└── support
-    ├── commands.js
-    └── e2e.js
-
+├── support
+│   ├── commands.js
+│   └── e2e.js
+│
 cypress.config.js
 package.json
+README.md
 ```
 
 ---
 
-## ✅ Implemented Features
+# ✅ Features
 
 - Page Object Model (POM)
-- Organized selectors
-- Successful login test
-- Invalid login test
+- Centralized selectors
 - Reusable methods
-- Clean project structure
+- Custom Cypress Commands
+- Fixtures
+- Hooks (beforeEach)
+- Base URL configuration
+- Successful login
+- Invalid password validation
+- Logout validation
 
 ---
 
-## ▶️ Running the project
+# ▶️ Installation
 
 Clone the repository
 
@@ -63,31 +72,44 @@ Install dependencies
 npm install
 ```
 
-Run Cypress
+Run Cypress UI
 
 ```bash
 npx cypress open
 ```
 
----
+Run tests in headless mode
 
-## 📌 Roadmap
-
-- [x] Initial project setup
-- [x] Page Object Model
-- [x] Successful login
-- [x] Invalid login
-- [ ] Fixtures
-- [ ] Custom Commands
-- [ ] Hooks
-- [ ] API Testing
-- [ ] Environment Variables
-- [ ] Reports
-- [ ] CI/CD with GitHub Actions
-- [ ] Docker
+```bash
+npx cypress run
+```
 
 ---
 
-## 👨‍💻 Author
+# 📚 Concepts Demonstrated
 
-Developed by **Valnei Rezende**.
+- UI Test Automation
+- Cypress Fundamentals
+- Page Object Model
+- Page Objects
+- Custom Commands
+- Fixtures
+- Hooks
+- Assertions
+- Clean Code
+- Test Organization
+- Reusability
+- Git Workflow
+
+---
+
+# 👨‍💻 Author
+
+Developed by **Valnei Rezende**
+
+GitHub:
+https://github.com/valnei-filho
+
+---
+
+This repository is part of my QA Automation portfolio and demonstrates the implementation of a scalable UI automation framework using Cypress.
